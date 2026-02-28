@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { TodoContext } from "./TodoContext"
+import { TodoContext } from "../context/TodoContext"
 import { useState } from "react"
 
 export function TodoItem({id,text,completed}) {

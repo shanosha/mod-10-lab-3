@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { TodoContext } from "./components/TodoContext"
+import { TodoContext } from "./context/TodoContext"
 import { TodoInput } from "./components/TodoInput"
 import { TodoList } from "./components/TodoList"
 
