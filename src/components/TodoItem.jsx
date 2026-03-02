@@ -22,7 +22,7 @@ export function TodoItem({id,text,completed}) {
         <>
         <div className="flex justify-between items-center border-b border-b-gray-300 py-4">
         { editing  && (
-                <input type="text" value={textField} onChange={(e)=>setTextField(e.target.value)} onKeyDown={(e)=>handleKeyDown(e)} aria-label="Task Text" className={cn(styles.input,"w-full")} />
+                <input name="editTodo" type="text" value={textField} onChange={(e)=>setTextField(e.target.value)} onKeyDown={(e)=>handleKeyDown(e)} aria-label="Task Text" className={cn(styles.input,"sm:w-full mx-4")} />
         )}
         { !editing  && (
             <>

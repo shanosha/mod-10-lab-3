@@ -10,7 +10,7 @@ export function TodoInput() {
     return (
         <div className="m-4">
             <input type="text" name="todo" placeholder="What needs to be done?" value={todoText} onChange={(e)=>setTodoText(e.target.value)} onKeyDown={(e)=>{if(e.key === "Enter"){addTodo(todoText);setTodoText("");}}} className={styles.input} />
-            <button className={cn(styles.button,styles.buttonActive, "m-4 py-2 px-3")} onClick={()=>{addTodo(todoText);setTodoText("");}}>Add Todo</button>
+            <button className={cn(styles.button,styles.buttonActive, "m-4 py-2 px-3 ml-0 sm:ml-4")} onClick={()=>{addTodo(todoText);setTodoText("");}}>Add Todo</button>
         </div>
     )
 }
